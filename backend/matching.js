@@ -1,3 +1,4 @@
+const game = require('./gameState');
 module.exports = () => {
 	let players = {},
 		onWait = [],
