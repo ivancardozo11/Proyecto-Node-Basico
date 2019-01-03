@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Curso básico de Node.js
 
 Este repositorio ha sido confeccionado para proveer de material apropiado al participante del curso durante el desarrollo del mismo.
@@ -27,3 +28,9 @@ Con esto hecho, su lección estará lista para ser desarrollada junto al program
 ## Licencia
 
 * **Licencia MIT**
+=======
+# Proyecto-Node-Básico
+Proyecto hecho con fundamentos básicos de node js
+
+https://github.com/ivancardozo11/Proyecto-Node-Basico.git
+>>>>>>> 0507570dd46078967a179acf1a8e80c42e0c7077
