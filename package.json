@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/platzi/nodejsbasico.git"
+    "url": "https://github.com/ivancardozo11/Proyecto-Node-Basico.git"
   },
   "keywords": [
     "nodejs",
     "basico"
   ],
-  "author": "Platzi",
+  "author": "Ivan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/platzi/nodejsbasico/issues"
+    "url": "https://github.com/ivancardozo11/Proyecto-Node-Basico.git"
   },
-  "homepage": "https://github.com/platzi/nodejsbasico#readme",
+  "homepage": "https://github.com/ivancardozo11/Proyecto-Node-Basico.git",
   "dependencies": {
     "socket.io": "^2.1.1"
   }
