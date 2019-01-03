@@ -14,15 +14,33 @@ module.exports = () => {
 		printListStatus();
 		while (onWait.length >= 2) {
 			console.log("Constructing room...");
-			/**
-			 * 
-			 * Reemplazar este bloque
-			 * 
-			 */
-			const p1 = players[onWait.pop()].user.name;
-			const p2 = players[onWait.pop()].user.name;
-			console.log(`We created a match for ${p1} and ${p2}`)
+			createMatch(onWait.pop(), onWait.pop())
+
 		}
+	}
+	function createMatch(p1ID, p2ID){
+		const roomId = p1ID + p2ID;
+		players[p1ID].roomId = roomId;
+		players[p2ID].roomId = roomId;
+
+		if(!onMatch[roomId]) onMatch[roomID] = game.newGame({
+			players : [players[p1ID], players[p2ID]],
+			roomId
+		});
+
+		players[p1ID].socket.emit("gameState", game.newGame({
+			players : [players[p1ID], players[p2ID]],
+			roomId,
+			playerId: 0,
+			opponentId: 1,
+		}));
+
+		players[p2ID].socket.emit("gameState", game.newGame({
+			players : [players[p1ID], players[p2ID]],
+			roomId,
+			playerId: 1,
+			opponentId: 0,
+		}));
 	}
 	
 	return {
