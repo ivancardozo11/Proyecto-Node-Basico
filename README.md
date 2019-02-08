@@ -1,8 +1,6 @@
 # Proyecto-Node-Básico TIC-TAC-TOE
 Proyecto hecho con fundamentos básicos de node js
 
-USO:
-clonar repositorio 
 
 
 Instalar :
